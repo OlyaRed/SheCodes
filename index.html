@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homework 5</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="forecast">
+      <div class="container-city">
+        <div class="row">
+          <div class="col">
+            Kiev
+          </div>
+          <div class="col">
+            Toronto
+          </div>
+          <div class="col">
+            Washington 
+          </div>
+          <div class="col">
+            Rome
+          </div>
+      </div>
+    
+      <form id="city-form">
+        <input type="text"
+        placeholder="Enter a city" 
+        utofocus="on"
+        class="city-search shadow-sm" id="city-search"/>
+        <button type="submit" class="btn btn-primary mb-1" id="current-location-button" value="Search">Search</button>
+        <button type="button" class="btn btn-warning mb-1"  id="current-position-button">Current</button>
+		  </form>
+      <div class="container-weather">
+        <div class="row">
+          <div class="col">
+            <h1 id="city">Kharkiv</h1>
+            <p>
+              Monday, 16:54
+            </p>
+          </div>
+          <div class="col">
+            <h1 id="degrees" class="degrees">22</h1>
+            <span class="unit">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+          </div>
+          <div class="col">
+            <img class="cloud" src="src/images/cloudsunrain.png">
+          </div>
+          <div class="col">
+            Precipitation: <span id="humidity"></span><span>%</span>
+            <br />
+            Wind: <span id="wind"></span><span>m/s</span>
+          </div>
+        </div>
+      </div>
+      <div class="weather-days">
+        <div class="row">
+          <div class="col">
+            Tuesday
+            <br />
+            <img class="emoji" src="src/images/cloud.png">
+            <br />
+            24&#176C
+          </div>
+          <div class="col">
+            Wednesday
+            <br />
+            <img class="emoji" src="src/images/cloudrain.png">
+            <br />
+            26&#176C
+          </div>
+          <div class="col">
+            Thursday
+            <br />
+            <img class="emoji" src="src/images/sun.png">
+            <br />
+            29&#176C
+          </div>
+          <div class="col">
+            Friday
+            <br />
+            <img class="emoji" src="src/images/cloudsun.png">
+            <br />
+            25&#176C
+          </div>
+          <div class="col">
+            Saturday
+            <br />
+            <img class="emoji" src="src/images/sun.png">
+            <br />
+            31&#176C
+          </div>
+      </div>
+	  </div>
+     <div class="autor">
+       <a href="https://github.com/matthieua/shecodes">Open source code,</a>		
+      by
+      <a href="https://app.slack.com/client/T6VNVRV99/D03FL8MAEKC/rimeto_profile/U03FYTFG56D">Olya Red</a>
+      from
+      <a href="https://www.shecodes.io/">SheCodes</a>
+      </div>
+    
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/5faaf492ff.js" crossorigin="anonymous"></script>
+    <script src="src/index.js">
+    </script>
+  </body>
+</html>
